@@ -10,7 +10,7 @@ import time
 
 
 class View(QWidget):
-
+    
     def __init__(self):
         super().__init__()
         self.definitions_layout = QHBoxLayout()
@@ -104,7 +104,6 @@ class Board(QWidget):
                 sq.setFixedWidth(self.square_size)
                 sq.setFixedHeight(self.square_size)
                 rows[i].addWidget(sq)
-                print(i, j)
         self.setLayout(board)
 
 
